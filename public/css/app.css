@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Section Start */
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 999;
+}
+.header .logo {
+    margin-left: 30px;
+}
+.header .logo p {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(220, 24, 24);
+    letter-spacing: 1px;
+}
+.header .logo p span {
+    color: black;
+    margin-left: 2px;
+}
+.header .nav-links {
+    margin-right: 30px;
+}
+.header .nav-links ul {
+    list-style: none;
+}
+.header .nav-links ul .links {
+    float: left;
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.header .nav-links ul .links:hover a {
+    background-color: aliceblue;
+    color: black !important;
+    padding: 5px;
+    border-radius: 5px;
+}
+.header .nav-links ul .links .active {
+    background-color: aliceblue;
+    color: black !important;
+    padding: 5px;
+    border-radius: 5px;
+}
+.header .nav-links ul .links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* Header Section End */
+/* Banner section start */
+.banner {
+    width: 100%;
+    height: 75vh;
+    position: relative;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.banner .text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner .text h1 {
+    width: 35%;
+    padding: 30px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+.banner .text a {
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-left: 30px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(228, 39, 127);
+}
+/* Banner section end */
+/* Latest posts start */
+.latest {
+    padding: 30px;
+    width: 100%;
+    height: auto;
+}
+.latest .posts {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.latest .filter {
+    display: flex;
+    justify-content: space-between;
+}
+.latest .filter label {
+    font-size: 20px;
+    font-weight: bold;
+}
+.latest .filter select {
+    width: 150px;
+    /* appearance: none; */
+    margin-right: 10px;
+    height: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.latest .card {
+    width: 30%;
+    height: auto;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+.latest .card:hover {
+    transform: scale(1.1);
+}
+.latest .posts .card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px 10px 0px 0px;
+}
+.latest .posts .card .heading {
+    margin-top: 10px;
+    padding: 5px;
+}
+.latest .posts .card .heading p {
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 600;
+}
+.latest .posts .card .button {
+    padding-left: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.latest .posts .card .button a {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+/* Latest posts end */
+
+/* Footer Section start */
+.footer {
+    margin-top: 50px;
+    bottom: 0;
+}
+.footer .socialmedia {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(110, 72, 238);
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.footer .socialmedia h4 {
+    color: white;
+}
+.footer .socialmedia .icons i {
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.footer .contents {
+    display: flex;
+    width: 100%;
+    background-color: rgb(22, 36, 43);
+    color: white;
+    justify-content: space-between;
+    padding: 30px;
+}
+.footer .contents hr {
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.footer .contents .company-details p {
+    width: 300px;
+    font-size: 13px;
+}
+.footer .contents .box ul {
+    list-style-type: none;
+}
+.footer .contents .box ul li {
+    margin-top: 10px;
+    font-size: 13px;
+}
+.footer .contents .box ul li a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.footer .contents .box ul li i {
+    margin-right: 5px;
+}
+.footer .copyright {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background-color: rgb(20, 20, 21);
+    text-align: center;
+}
+/* Footer Section End */
+/* New Blog Section start */
+.newpost {
+    padding: 30px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.newpost form {
+    width: 60%;
+    height: auto;
+}
+.newpost form label {
+    font-size: 20px;
+    font-weight: bold;
+}
+.newpost form .form-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+}
+.newpost form input[type="text"] {
+    width: 60%;
+    height: 40px;
+    padding-left: 10px;
+}
+.newpost form select {
+    width: 60%;
+    height: 40px;
+    padding-left: 10px;
+}
+.newpost form .error {
+    color: red;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.newpost form textarea {
+    height: 100px;
+    width: 60%;
+    padding: 10px;
+}
+.newpost form img {
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+}
+.newpost form #btn {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(8, 152, 109);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+/* New Blog Section End */
+.myposts {
+    min-height: 80vh;
+}
+/* view post start */
+
+/* view post end */
